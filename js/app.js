@@ -134,6 +134,13 @@
                 scrollTop: $("#firstDiv").offset().top-120
             }, 1000);
         }
+        $scope.goToCharacterPage= function(){
+
+             console.log("clicked")
+            $('html, body').animate({
+                scrollTop: $("#characters").offset().top-120
+            }, 1000);
+        }
         $scope.clickTest()
         $scope.openContactPage     = function(){
 

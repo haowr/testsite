@@ -1,0 +1,1211 @@
+<html  ng-app="store"ng-controller="mainCtrl" ng-view class="bg1">
+
+<head>
+
+  <title>OHRHA | A BURNING HOUSE</title>
+
+  <meta name="theme-color" content="black" />
+
+  <meta name="DESCRIPTION"
+    content="Your Modern Web. A web application is the way the modern web user interacts with web content. Get in touch and build your own! ">
+    <base href="/">
+
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    crossorigin="anonymous" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
+  <link href="./css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+
+  <!-- JavaScript Dependencies -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="/js/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+  <script src="/js/angular-chart.js"></script>
+  <script src="/js/app.js" type="text/javascript"></script>
+  <script src="/js/routes.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/seethru@4/dist/seeThru.min.js"></script>
+
+
+  <!-- JavaScript Dependencies -->
+
+</head>
+<!--
+<video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn"     id="videoBG"  autoplay muted loop>
+   <source src="./images/eyelong.mp4" type="video/mp4">
+ </video>  -->
+ <!--
+ <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0;opacity:0.7; " id="videoBG"  autoplay muted loop>
+   <source src="./images/eyelong.mp4" type="video/mp4">
+ </video>-->
+ <!--
+ <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn"  style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0; opacity:0; " id="videoBG"  autoplay muted loop>
+   <source src="./images/eyelong.mp4" type="video/mp4">
+ </video>  
+ <video ng-if="contactPageOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; left:-430; top:0; border:25px solid rgb(6, 6, 6);" id="videoBG"  autoplay muted loop>
+   <source src="./images/mon.mp4" type="video/mp4">
+ </video>
+
+ <img ng-if="homePageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px" >
+ <img ng-if="lightsPageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.5" >
+ <img ng-if="soundOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.2" >
+ <img ng-if="contactPageOpen" class="animated fadeIn" src ="../images/mon.gif" style="position:fixed; left:-420; height:1080px; opacity:1" >
+
+-->
+
+
+<div class="navbar-fixed black" style="height:200px; box-shadow:4px solid black;">
+  <nav class="black">
+    <div class="nav-wrapper">
+   
+      <img itemprop="image" class="brand-logo center animated fadeIn" src="./bb.png" width="340" height="390" alt="logo" />
+
+   
+      <ul class="right">
+      
+        <li><i class="material-icons right" style="font-size:60px; color:yellow;">view_module</i></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<body >
+
+  <div class="row hide-on-large-only" >
+    <div class = "row"></div>
+    <div class = "row"></div>
+   
+    <div ng-if="contactPageOpen " class="row animated fadeIn">
+
+
+        <div class = "col s12 center-align" >
+          
+          <div class = "col s12 ">
+      
+          
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+            <div class = "row">
+        
+                <div class = "col s8 center-align">
+                  <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                    OHRHA  
+                    <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:30vw;;top:50'>
+  
+                  </h1>
+                  <div class = "col s12 right-align">
+                    <br>
+                    <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                    <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+      
+                  </div>
+                </div>
+                <div class = "col s4">
+
+                </div>
+               
+      
+            </div>
+        
+     
+      
+        <div class="col s8" >
+          
+            <div class = "col s3 center-align" >         
+              <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="" > <h4 class="montserrat  flow-text" >HOME</h4></a>
+              <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class= 'white-text' > <h4 class="montserrat flow-text" >HOME</h4></a>
+      
+      
+            </div>
+            <div class = "col s3 center-align">         
+              <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text flow-text"style="" > <h4 class="montserrat white-text flow-text" >LIGHT</h4></a>
+              <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text flow-text"style="" > <h4 class="montserrat white-text flow-text" >LIGHT</h4></a>
+      
+            </div>
+            <div class = "col s3 center-align">         
+              <a href="#" class="white-text" ng-click="openSoundPage()"ng-click="openShopPage()" > <h4 class="montserrat  flow-text" >SOUND</h4></a>
+            </div>
+            <div class = "col s3 center-align">     
+      
+              <a href="#" ng-click="openContactPage()"style="color:rgb(214, 212, 212);" > <h4 class="montserrat flow-text "  style=" color:rgb(214, 212, 212); opacity:.7">CONTACT</h4></a>
+            
+            </div>
+          
+      
+            <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+
+            <div class = 'col s12 center-align'>
+            </div> 
+
+            <div class = "col s12 center-align">
+
+              <div class = "row" >
+
+                <div class = "col s1"></div>
+
+                <div class = "col s2 ">
+                  <i class = "material-icons white-text " style=" font-size:50px;">email 
+                    </i>
+                </div>
+                
+                <div class = "col s2 left-align">
+                  <span class="montserrat white-text" style="font-size:25px; padding-top:10px;">OHRHA@PROTONMAIL.COM</span>
+                </div>
+
+                <div class = "col s2">
+                  
+                </div>
+
+                <div class = "col s2">
+                </div>
+
+                <div class = "col s1">
+                </div>
+
+              </div>
+
+     
+              <div class = "row">
+
+
+                <div class = "col s1"></div>
+
+                <div class = "col s2 ">
+                  <i class="fa fa-spotify white-text " aria-hidden="true" style="font-size:50px;"></i>
+
+                </div>
+
+                <div class = "col s2">
+                  <a href="https://instagram.com/ohrhahrho"class="white-text" ><i class="fa fa-instagram " aria-hidden="true" style='font-size:50px; ;'></i></a>
+
+                </div>
+
+                <div class = "col s2">
+                  <a href="https://youtube.com" class="white-text"><i class="fa fa-youtube " aria-hidden="true" style='font-size:50px; ;'></i></a>
+
+                </div>
+
+                <div class = "col s2">
+                  <a href="https://twitter.com/ohrhahrho" class="white-text"><i class="fa fa-twitter " aria-hidden="true" style='font-size:50px; ;'></i></a>
+
+                </div>
+
+                <div class = "col s2">
+                  <a href="https://bandcamp.com/ohrha" class="white-text"><i class="fa fa-bandcamp " aria-hidden="true" style='font-size:50px; ;'></i></a>
+
+                </div>
+
+                <div class = "col s1"></div>
+                
+              </div>
+
+              <div class = "row">
+
+                <div class = "col s2"></div>
+                <div class = "col s8" style="border:2px solid rgb(214, 212, 212)"></div>
+                <div class = "col s2"></div>
+
+
+              </div>
+        
+            </div>
+
+        </div>
+
+        <div class = "col s4"></div>
+            <div class = "row">
+            <div class = "col s6 left-align">    
+              <br>
+              <br>
+              <br>
+              
+            <div class = "row">
+              
+            </div>
+          
+          </div>
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+      
+      
+            <div class = "row">
+            
+          </div>
+        
+        </div>
+        
+            </div>
+        
+        
+        
+        
+          </div>
+          <div class = "col s4"></div>
+
+     
+        </div>
+
+   
+
+    </div>
+
+    <div ng-if="homePageOpen  " class="row animated fadeIn">
+  
+
+      
+
+        <div class = "col s12 center-align" >
+        
+        <div class = "col s12 ">
+
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+            <div class = "row">
+      
+              <div class = "col s8 center-align">
+            
+                <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                  OHRHA  
+                  <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:30vw;;top:50'>
+
+                </h1>
+                <div class = "col s12 right-align">
+                  <br>
+                  <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                  <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+    
+                </div>
+              </div>
+              <div class = "col s4">
+
+               
+              </div>
+             
+           
+            </div>
+
+
+              <div class = "col s8">
+                <div >
+        
+                  <div class = "col s3 center-align" >         
+                    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="flow-text"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat flow-text"  style="  opacity:.7">HOME</h4></a>
+                    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat flow-text" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME?</h4></a>
+        
+        
+                  </div>
+                  <div class = "col s3 center-align">         
+                    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text flow-text"style="position: absolute;right:750; top:720" > <h4 class="montserrat white-text" >LIGHT</h4></a>
+                    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text flow-text" >LIGHT</h4></a>
+        
+                  </div>
+                  <div class = "col s3 left-align">         
+                    <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()" > <h4 class="montserrat white-text  flow-text" >SOUND</h4></a>
+                  </div>
+                  <div class = "col s3 center-align">     
+        
+                    <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat white-text flow-text">CONTACT</h4></a>
+                  
+                  </div>
+                
+        
+                  <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+                
+        
+                  <div class = 'col s12 left-align'>
+        
+                    <p class="montserrat  " style="color:rgb(214, 212, 212); font-size: 20px;">
+                      
+                      Thank-you for joining us today. My friend is very happy to have your attention, in fact, he seems to crave it!? smh...
+        
+                      My man here has been creating music of a most hypnotic nature since as long as i can remember. Creating worlds, and emotional vessels into which one can "Wash their minds", as it were.
+        
+                      Cutting ties, and unburdening oneself of the tangled webs from the yoke of suffering inherant, (programmed?), in the exercise of human relationships, and built into the structure of 
+        
+                      man itself.
+                   </p>
+                    <p class="montserrat flow-text " style="color:rgb(214, 212, 212);font-size: 20px;">
+                      
+            ..Its cool, i guess.
+                   </p>
+        
+                  </div>
+                  <div class = 'col s12 right-align'>
+        
+           
+                    <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+                      
+                      - OHR <span style="font-family:shem;">a</span>
+        
+                   </p>
+             
+        
+                  </div>
+        <!-- Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." 
+                    Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.-->
+              </div>
+              </div>
+              <div class = 'col s4'></div>
+
+          </div>
+          
+      
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+
+          <div class = "row">
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+            
+          <div class = "row">
+            
+          </div>
+        
+        </div>
+        <div class = "col s6 left-align">    
+          <br>
+          <br>
+          <br>
+
+    
+          <div class = "row">
+          
+        </div>
+      
+      </div>
+      
+          </div>
+      
+      
+      
+      
+        </div>
+
+        <div class = "col s12">
+  
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+                <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+                <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+  
+              </div>
+              <div class = "col s2"></div>
+  
+            </div>
+
+  
+        </div>
+  
+      
+      
+      
+      
+      
+      
+      </div>
+      <div ng-if="soundOpen  " class="row animated fadeIn">
+  
+
+        <div class = "col s12 center-align" >
+        
+        <div class = "col s12 ">
+
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+            <div class = "row">
+      
+              <div class = "col s8 center-align">
+            
+                <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                  OHRHA  
+                  <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:30vw;;top:50'>
+
+                </h1>
+                <div class = "col s12 right-align">
+                  <br>
+                  <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                  <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+    
+                </div>
+              </div>
+              <div class = "col s4">
+
+           
+              </div>
+             
+           
+            </div>
+
+
+              <div class = "col s8">
+                <div >
+        
+                  <div class = "col s3 center-align" >         
+                    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  flow-text">HOME</h4></a>
+                    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat flow-text " style=" color:rgb(214, 212, 212);" >HOME</h4></a>
+        
+        
+                  </div>
+                  <div class = "col s3 center-align">         
+                    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"> <h4 class="montserrat white-text flow-text" >LIGHT</h4></a>
+                    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text flow-text" >LIGHT</h4></a>
+        
+                  </div>
+                  <div class = "col s3 left-align">         
+                    <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()" > <h4 class="montserrat white-text flow-text "  style="  opacity:.7">SOUND</h4></a>
+                  </div>
+                  <div class = "col s3 center-align">     
+        
+                    <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat white-text flow-text" >CONTACT</h4></a>
+                  
+                  </div>
+                
+        
+                  <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+                
+                  <div class = 'col s12 center-align'>
+        
+                    <p class="montserrat animated shake " style="color:rgb(214, 212, 212); font-size: 25px;">
+                      
+                      ( COMING SOON )
+                      
+                   </p>
+                 
+                  </div>
+                  <div class = 'col s12 right-align'>
+        
+           
+                    <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+                      
+                      - OHR <span style="font-family:shem; ">a</span>
+        
+                   </p>
+             
+        
+                  </div>
+        <!-- Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." 
+                    Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.-->
+              </div>
+              </div>
+              <div class = 'col s4'></div>
+
+          </div>
+          
+      
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+
+          <div class = "row">
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+            
+          <div class = "row">
+            
+          </div>
+        
+        </div>
+        <div class = "col s6 left-align">    
+          <br>
+          <br>
+          <br>
+
+    
+          <div class = "row">
+          
+        </div>
+      
+      </div>
+      
+          </div>
+      
+      
+      
+      
+        </div>
+
+        <div class = "col s12">
+  
+  
+          <div class = "row">
+            <div class = "col s2"></div>
+            <div class = "col s8 right-align">
+              <br>
+              <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+              <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+
+            </div>
+            <div class = "col s2"></div>
+
+          </div>
+
+
+      </div>
+  
+      </div>
+  
+      <div ng-if="lightsPageOpen  " class="row animated fadeIn">
+  
+
+        <div class = "col s12 center-align" >
+        
+        <div class = "col s12 ">
+
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+         <div class = "row"></div>
+            <div class = "row">
+      
+              <div class = "col s8 center-align">
+            
+                <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                  OHRHA  
+                  <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:30vw;;top:50'>
+
+                </h1>
+                <div class = "col s12 right-align">
+                  <br>
+                  <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                  <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+    
+                </div>
+              </div>
+           
+              <div class = "col s4">
+
+        
+              </div>
+             
+
+           
+            </div>
+
+
+              <div class = "col s8">
+                <div >
+        
+                  <div class = "col s3 center-align" >         
+                    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+                    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME</h4></a>
+        
+        
+                  </div>
+                  <div class = "col s3 center-align">         
+                    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px; opacity:.7">LIGHT</h4></a>
+                    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+        
+                  </div>
+                  <div class = "col s3 left-align">         
+                    <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
+                  </div>
+                  <div class = "col s3 center-align">     
+        
+                    <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
+                  
+                  </div>
+                
+        
+                  <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+                
+        
+                  <div class = 'col s12 center-align'>
+        
+                    <p class="montserrat animated shake " style="color:rgb(214, 212, 212); font-size: 20px;">
+                      
+                      ( COMING SOON )
+                      
+                   </p>
+                 
+                  </div>
+                  <div class = 'col s12 right-align'>
+        
+           
+                    <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+                      
+                      - OHR <span style="font-family:shem; ">a</span>
+        
+                   </p>
+             
+        
+                  </div>
+        <!-- Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." 
+                    Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.-->
+              </div>
+              </div>
+              <div class = 'col s4'></div>
+
+          </div>
+          
+      
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+
+          <div class = "row">
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+            
+          <div class = "row">
+            
+          </div>
+        
+        </div>
+        <div class = "col s6 left-align">    
+          <br>
+          <br>
+          <br>
+
+    
+          <div class = "row">
+          
+        </div>
+      
+      </div>
+      
+          </div>
+      
+      
+      
+      
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="row hide-on-med-and-down" >
+      <div class = "row"></div>
+      <div class = "row"></div>
+      <div class = "row"></div>
+
+      <div ng-if="contactPageOpen " class="row animated fadeIn">
+  
+  
+          <div class = "col s12 center-align" >
+            
+            <div class = "col s12 ">
+        
+            
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+              <div class = "row">
+          
+                  <div class = "col s8 center-align">
+                    <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                      OHRHA  
+                      <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:32vw;;top:6vh'>
+    
+                    </h1>
+                    <div class = "col s12 right-align">
+                      <br>
+                      <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                      <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+        
+                    </div>
+                  </div>
+                  <div class = "col s4">
+                
+                  
+                  </div>
+                 
+        
+              </div>
+          
+       
+        
+          <div class="col s8" >
+            
+              <div class = "col s3 center-align" >         
+                <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="" > <h4 class="montserrat  flow-text" style=" " style=" ">HOME</h4></a>
+                <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class= 'white-text' > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+        
+        
+              </div>
+              <div class = "col s3 center-align">         
+                <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text flow-text"style="" > <h4 class="montserrat white-text small" style=" " style=" ">LIGHT</h4></a>
+                <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" ">LIGHT</h4></a>
+        
+              </div>
+              <div class = "col s3 center-align">         
+                <a href="#" class="white-text" ng-click="openSoundPage()"ng-click="openShopPage()" > <h4 class="montserrat  flow-text" style="  " style=" ">SOUND</h4></a>
+              </div>
+              <div class = "col s3 center-align">     
+        
+                <a href="#" ng-click="openContactPage()"style="color:rgb(214, 212, 212);" > <h4 class="montserrat flow-text" style=" " style=" color:rgb(214, 212, 212); opacity:.7">CONTACT</h4></a>
+              
+              </div>
+            
+        
+              <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+  
+              <div class="row"></div>
+              <div class="row"></div>
+              <div class="row"></div>
+  
+              <div class = 'col s12 center-align'>
+              </div> 
+  
+              <div class = "col s12 center-align">
+
+                <i class = "material-icons white-text " style=" font-size:50px;">email                 
+                  <span class="montserrat white-text" style="font-size:30px; padding-bottom:300px;">  OHRHA@PROTONMAIL.COM</span>
+                </i>
+  
+                <div class = "row" >
+  
+                  <div class = "col s1"></div>
+  
+                  <div class = "col s2 ">
+                  
+                  </div>
+                  <div class = "col s2">                   
+                  </div>
+                  <div class = "col s2"></div>
+                  <div class = "col s4 left-align">
+
+                  </div>
+                  <div class = "col s1"></div>
+  
+               
+  
+                </div>
+  
+       
+                <div class = "row">
+  
+  
+                  <div class = "col s1"></div>
+  
+                  <div class = "col s2 ">
+                    <i class="fa fa-spotify white-text " aria-hidden="true" style="font-size:50px;"></i>
+  
+                  </div>
+  
+                  <div class = "col s2">
+                    <a href="https://instagram.com/ohrhahrho"class="white-text" ><i class="fa fa-instagram " aria-hidden="true" style='font-size:50px; ;'></i></a>
+  
+                  </div>
+  
+                  <div class = "col s2">
+                    <a href="https://youtube.com" class="white-text"><i class="fa fa-youtube " aria-hidden="true" style='font-size:50px; ;'></i></a>
+  
+                  </div>
+  
+                  <div class = "col s2">
+                    <a href="https://twitter.com/ohrhahrho" class="white-text"><i class="fa fa-twitter " aria-hidden="true" style='font-size:50px; ;'></i></a>
+  
+                  </div>
+  
+                  <div class = "col s2">
+                    <a href="https://bandcamp.com/ohrha" class="white-text"><i class="fa fa-bandcamp " aria-hidden="true" style='font-size:50px; ;'></i></a>
+  
+                  </div>
+  
+                  <div class = "col s1"></div>
+                  
+                </div>
+  
+                <div class = "row">
+  
+                  <div class = "col s2"></div>
+                  <div class = "col s8" style="border:2px solid rgb(214, 212, 212)"></div>
+                  <div class = "col s2"></div>
+  
+  
+                </div>
+          
+              </div>
+  
+          </div>
+  
+          <div class = "col s4"></div>
+              <div class = "row">
+              <div class = "col s6 left-align">    
+                <br>
+                <br>
+                <br>
+                
+              <div class = "row">
+                
+              </div>
+            
+            </div>
+            <div class = "col s6 left-align">    
+              <br>
+              <br>
+              <br>
+        
+        
+              <div class = "row">
+              
+            </div>
+          
+          </div>
+          
+              </div>
+          
+          
+          
+          
+            </div>
+            <div class = "col s4"></div>
+  
+       
+          
+          </div>
+  
+     
+  
+      </div>
+  
+      <div ng-if="homePageOpen  " class="row animated fadeIn">
+    
+  
+          <div class = "col s12 center-align" >
+          
+         
+            <h1></h1>
+     
+            <rs-static-layers>
+              <rs-layer id="slider-7-slide-7-layer-22" class="rs-pxl-1 rs-layer-static" data-type="image" data-xy="x:c;y:m;yo:0,0,0,-80px;" data-text="w:normal;" data-dim="w:662px,490px,460px,260px;h:205px,152px,142px,401px;" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-onslides="s:1;" data-frame_0="rX:70deg;oZ:-50;" data-frame_1="oZ:-50;e:BounceSolid;st:350;sp:1390;sR:350;" data-frame_999="o:0;st:w;sR:7260;" style="z-index:10;"><img src="./cl.png" alt="d" width="662" height="805" data-no-retina></rs-layer>
+              <rs-layer id="slider-7-slide-7-layer-28" class="rs-pxl-3 rs-layer-static" data-type="image" data-rsp_ch="on" data-xy="x:l,l,c,c;xo:318px,303px,0,0;yo:301px,267px,355px,215px;" data-text="w:normal;s:20,16,8,4;l:0,21,11,6;" data-dim="w:660px,500px,450px,250px;h:17px,13px,12px,6px;" data-onslides="s:1;" data-frame_0="rX:70deg;oZ:-50;" data-frame_1="oZ:-50;e:Power2.easeIn;st:710;sp:600;sR:710;" data-frame_999="o:0;st:w;sR:7690;" style="z-index:11;"></rs-layer>
+            
+              <h1 class="animate__animated " style="z-index:2000; font-size:300px; color:darkgrey;opacity:.2;">P2E</h1>
+            
+            <a href="#storage" class="">
+            <i style="position:absolute;top:70vh; left:35vw;font-size:100px; color:yellow;"class="material-icons  text-yellow animate__animated animate__flash animate__infinite	infinite animate__slow">arrow_drop_down
+            </i>
+            </a>
+            <!--
+            <h1 class="animate__animated animate__slideInRight" style="position:absolute; top:60vh;left:10vw;z-index:2000; font-size:50px; ;">Meta City?</h1>
+            
+            <h1 class="animate__animated animate__slideInLeft" style="position:absolute;top:8vh; left:10vw;z-index:2000; font-size:50px;">Will You Escape...</h1>
+            -->
+            <!--<rs-layer id="slider-7-slide-7-layer-25" class="rs-pxl-2 rs-layer-static" data-type="text" data-xy="x:c;xo:-131px,-131px,-131px,-1px;y:m;yo:176px,136px,136px,26px;" data-text="s:12;" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-onslides="s:1;" data-frame_0="rX:-70deg;oZ:-50;" data-frame_1="oZ:-50;e:BounceSolid;st:1490;sp:1010;sR:1490;" data-frame_999="o:0;st:w;sR:6500;" style="z-index:8;font-family:Roboto;"><a itemprop="url" href="https://qodeinteractive.com/purchase/overworld/" target="_blank" style="color: #ffffff;padding: 12px 58px" class="edgtf-btn edgtf-btn-small edgtf-btn-outline">
+            <span class="edgtf-btn-text">buy theme</span>
+            </a>
+            </rs-layer>-->
+            <!--<rs-layer id="slider-7-slide-7-layer-26" class="rs-pxl-2 rs-layer-static" data-type="text" data-xy="x:c;xo:130px,130px,130px,0;y:m;yo:176px,136px,136px,106px;" data-text="s:12;" data-basealign="slide" data-rsp_o="off" data-rsp_bd="off" data-onslides="s:1;" data-frame_0="rX:-70deg;oZ:-50;" data-frame_1="oZ:-50;e:BounceSolid;st:1450;sp:1000;sR:1450;" data-frame_999="o:0;st:w;sR:6550;" data-tloop="u:true;" style="z-index:9;font-family:Roboto;"><a itemprop="url" href="https://overworld.qodeinteractive.com/our-team/" target="_self" style="color: #ffffff" class="edgtf-btn edgtf-btn-medium edgtf-btn-solid edgtf-btn-cutting-edge">
+            <span class="edgtf-btn-text">Meta City??</span>
+            </a>
+            </rs-layer>-->
+            
+            </rs-static-layers>
+            
+        
+        
+          </div>
+  
+      
+    
+        </div>
+        <div ng-if="soundOpen  " class="row animated fadeIn">
+    
+  
+          <div class = "col s12 center-align" >
+          
+          <div class = "col s12 ">
+  
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+              <div class = "row">
+        
+                <div class = "col s8 center-align">
+              
+                  <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                    OHRHA  
+                    <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:32vw;;top:6vh'>
+  
+                  </h1>
+                  <div class = "col s12 right-align">
+                    <br>
+                    <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                    <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+      
+                  </div>
+                </div>
+                <div class = "col s4">
+  
+  
+                </div>
+  
+             
+              </div>
+  
+  
+                <div class = "col s8">
+                  <div >
+          
+                    <div class = "col s3 center-align" >         
+                      <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+                      <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME</h4></a>
+          
+          
+                    </div>
+                    <div class = "col s3 center-align">         
+                      <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"> <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+                      <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+          
+                    </div>
+                    <div class = "col s3 left-align">         
+                      <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px; opacity:.7">SOUND</h4></a>
+                    </div>
+                    <div class = "col s3 center-align">     
+          
+                      <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
+                    
+                    </div>
+                  
+          
+                    <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+                  
+                    <div class = 'col s12 center-align'>
+          
+                      <p class="montserrat animated shake " style="color:rgb(214, 212, 212); font-size: 25px;">
+                        
+                        ( COMING SOON )
+                        
+                     </p>
+                   
+                    </div>
+                    <div class = 'col s12 right-align'>
+          
+             
+                      <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+                        
+                        - OHR <span style="font-family:shem; ">a</span>
+          
+                     </p>
+               
+          
+                    </div>
+          <!-- Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." 
+                      Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.-->
+                </div>
+                </div>
+                <div class = 'col s4'></div>
+  
+            </div>
+            
+        
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <div class = "row"></div>
+  
+            <div class = "row">
+            <div class = "col s6 left-align">    
+              <br>
+              <br>
+              <br>
+              
+            <div class = "row">
+              
+            </div>
+          
+          </div>
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+  
+      
+            <div class = "row">
+            
+          </div>
+        
+        </div>
+        
+            </div>
+        
+        
+        
+        
+          </div>
+  
+      
+        </div>
+    
+        <div ng-if="lightsPageOpen  " class="row animated fadeIn">
+    
+  
+          <div class = "col s12 center-align" >
+          
+          <div class = "col s12 ">
+  
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+           <div class = "row"></div>
+              <div class = "row">
+        
+                <div class = "col s8 center-align">
+              
+                  <h1 class="montserrat " (click)="testButton()" style="color:rgb(214, 212, 212);" >
+                    OHRHA  
+                    <img src="./images/ohrhawhitereal.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.5;left:32vw;;top:6vh'>
+  
+                  </h1>
+                  <div class = "col s12 right-align">
+                    <br>
+                    <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; color:rgb(214, 212, 212)">volume_up</i>
+                    <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px;  color:rgb(214, 212, 212)" >volume_off</i>
+      
+                  </div>
+                </div>
+                <div class = "col s4">
+  
+  
+                </div>
+  
+             
+              </div>
+  
+  
+                <div class = "col s8">
+                  <div >
+          
+                    <div class = "col s3 center-align" >         
+                      <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+                      <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style=" color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME</h4></a>
+          
+          
+                    </div>
+                    <div class = "col s3 center-align">         
+                      <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px; opacity:.7">LIGHT</h4></a>
+                      <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+          
+                    </div>
+                    <div class = "col s3 left-align">         
+                      <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
+                    </div>
+                    <div class = "col s3 center-align">     
+          
+                      <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
+                    
+                    </div>
+                  
+          
+                    <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+                  
+          
+                    <div class = 'col s12 center-align'>
+          
+                      <p class="montserrat animated shake " style="color:rgb(214, 212, 212); font-size: 20px;">
+                        
+                        ( COMING SOON )
+                        
+                     </p>
+                   
+                    </div>
+                    <div class = 'col s12 right-align'>
+          
+             
+                      <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+                        
+                        - OHR <span style="font-family:shem; ">a</span>
+          
+                     </p>
+               
+          
+                    </div>
+          <!-- Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." 
+                      Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.-->
+                </div>
+                </div>
+                <div class = 'col s4'></div>
+  
+            </div>
+            
+        
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <div class = "row"></div>
+        <div class = "row"></div>
+  
+            <div class = "row">
+            <div class = "col s6 left-align">    
+              <br>
+              <br>
+              <br>
+              
+            <div class = "row">
+              
+            </div>
+          
+          </div>
+          <div class = "col s6 left-align">    
+            <br>
+            <br>
+            <br>
+  
+      
+            <div class = "row">
+            
+          </div>
+        
+        </div>
+        
+            </div>
+        
+        
+        
+        
+          </div>
+  
+         
+        </div>
+  
+  
+      </div>
+
+</body>
+</html>
+

@@ -131,7 +131,7 @@
 
             console.log("clicked")
             $('html, body').animate({
-                scrollTop: $("#firstDiv").offset().top-80
+                scrollTop: $("#firstDiv").offset().top-100
             }, 1000);
         }
         $scope.clickTest()

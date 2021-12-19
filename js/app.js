@@ -131,10 +131,10 @@
 
             console.log("clicked")
             $('html, body').animate({
-                scrollTop: $("#myDiv").offset().top
+                scrollTop: $("#firstDiv").offset().top
             }, 1000);
         }
-
+        $scope.clickTest()
         $scope.openContactPage     = function(){
 
                 if(!$scope.contactPageOpen){

@@ -262,7 +262,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
    
       <ul class="right" ng-click="openMenu()">
       
-        <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">view_module</i></li>
+        <li><i class="material-icons right" style="font-size:60px; " ng-class="{'openmenu':menuOpen,'menuclose':!menuOpen}">dehaze</i></li>
       </ul>
     </div>
   </nav>
@@ -328,9 +328,9 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				
 					<div class="caption center-align" style="border:2px solid white;">
 					<h1 style="font-family:'Oswald'">Can You Escape?</h1>
-					<h3 style="font-family:'Oswald'">THE META FACTORY...</h3>
+					<h3 style="font-family:'Oswald'">THE META FACTORY?</h3>
 					
-					<a class="blue-grey lighten-2 btn"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
+					<a class="blue-grey lighten-2 btn" target="_blank"href="https://www.youtube.com/watch?v=bwUlP_Oeq94&ab_channel=UFOGamingOfficial"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
 
 						<img class="img-responsive"  src='./untitled.png'>
 					</div>
@@ -354,7 +354,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			  </div>
 
 			  <div class="slider section scrollspy" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.png')" id="myDiv">
-				<ul class="slides" style="background-color:transparent;">
+				<ul class="slides" style="background-color:transparent; border:2px solid white;">
 				  <li>
 					<img > <!-- random image -->
 					<div class="caption center-align">
@@ -366,6 +366,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 						Your browser does not support the video tag.
 					  </video>
+					  <a href="#" ng-click="goToCharacterPage()" >
+						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+						</i>
+						</a>
 					  <!--<a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
@@ -394,6 +398,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  
 				</ul>
 			  </div>
+
+
 			  <div class="slider" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
 				<ul class="slides" style="background-color:transparent;">
 				  <li>
@@ -407,14 +413,16 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				  
 						
 				   <div class="col s12">
-					<a href="#" ng-click="goToContactPage()"  >
+					<a href="#" ng-click="goToNftpage()">
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
-						</a>
+				</a>
 				  </div>
 						
 						</div>
 				  </li>
+
+				  
 				  <li>
 
 					<!-- random image -->
@@ -427,7 +435,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 
 						 <div class="col s12">
-							<a href="#" ng-click="goToContactPage()"  >
+							<a href="#" ng-click="goToNftPage()"  >
 								<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 								</i>
 								</a>
@@ -445,7 +453,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 						<!-- random image -->
 						   <div class="caption center-align" style="border:2px solid white;">
-							 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU?</h1>
+							 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
 							 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
 							 <h5 class="light grey-text text-lighten-3 animated flash infinite"  style="font-family:'Oswald'; font-size:16px">( SWIPE TO SCROLL )</h5>
 	
@@ -453,7 +461,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 							 <img class="img-responsive" src='./steel.png'>
 							 
 							 <div class="col s12">
-								<a href="#" ng-click="goToContactPage()"  >
+								<a href="#" ng-click="goToNftPage()"  >
 									<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 									</i>
 									</a>
@@ -464,7 +472,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				</ul>
 			  </div>
 			  
-			  <div class="slider" id="nft" style= "background-color:transparent; background-image:url('./joj-01.png')">
+			  <div class="slider" id="nft" style= "background-color:transparent; border:2px solid white; background-image:url('./joj-01.png')">
 				<ul class="slides" style="background-color:transparent;">
 					<li>
 						<img > <!-- random image -->
@@ -494,7 +502,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 				<ul class="slides" style="background-color:transparent;">
 				  <li>
 					<img > <!-- random image -->
-					<div class="caption center-align">
+					<div class="caption center-align" style="border:2px solid white;">
 						<br>
 						<br>
 						<br>
@@ -505,23 +513,36 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					  <div class="col s4">
 						<br>
 						<br>
+						<br>
+					
 						  
 						<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
 					</div>
 						<div class="col s4">
 							<br>
 							<br>
+							<br>
+						
 							  
 							<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
 						</div>
 							<div class="col s4">
 								<br>
 								<br>
-								  
+								
+						<br>
 								<i class="fa fa-instagram" style="font-size:40px;" aria-hidden="true"></i>
 							</div>
-					 
-				
+					 <div class="col s12">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+					 </div>
 			
 				  </li>
 			

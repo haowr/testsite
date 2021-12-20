@@ -281,8 +281,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <br>
 <br>
 			<ul>
-				<li><h3 ng-class="{'menu1':menu1}" ng-click="openMenu1()" class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME</h3></li>
-				<li><h3 ng-class="{'menu1':menu2}"  ng-click="openMenu2()"class="white-text"style="font-family:'Oswald'; font-size:40px;">INFO</h3></li>
+				<li><h3 ng-class="{'menu1':menu1}" ng-click="goToHome()" class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME</h3></li>
+				<li><h3 ng-class="{'menu1':menu2}"  ng-click="openInfoPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">INFO</h3></li>
 
 				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToCharacterPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CHARACTERS</h3></li>
 				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToNftPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">NFT</h3></li>
@@ -337,40 +337,46 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					
 				  </li>
 				  <li>
-					<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-					<div class="caption left-align">
-					  <h3>Left Aligned Caption</h3>
-					  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+					<img > <!-- random image -->
+				
+					<div class="caption center-align" style="border:2px solid white;">
+					<h1 style="font-family:'Oswald'">Join The Crew</h1>
+					<h3 style="font-family:'Oswald'">Sign-Up Today For Access To The Beta</h3>
+					
+					<a class="blue-grey lighten-2 btn"><i class="material-icons left">face</i>Sign-Up!</a>
+
+						<img class="img-responsive"  src='./logotrans.gif'>
 					</div>
+					
 				  </li>
 				
 				</ul>
 			  </div>
 
-			  <div class="slider section scrollspy" style= "background-color:transparent; background-image:url('./bckrndblur.png')" id="myDiv">
+			  <div class="slider section scrollspy" id="infopage" style= "background-color:transparent; background-image:url('./bckrndblur.png')" id="myDiv">
 				<ul class="slides" style="background-color:transparent;">
 				  <li>
 					<img > <!-- random image -->
 					<div class="caption center-align">
-					  <h1 style="font-family:'Oswald'" class="animated fadeIn">Can You Escape...</h1>
-					  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
+					  <h1 style="font-family:'Oswald'" class="animated fadeIn">An Endless Adventure</h1>
+					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald';">New Challenging Locations...More Rewards To Unlock!</h5>
 					  <video width="100%" playsinline autoplay muted loop controls>
 						<source src="./tst.mp4" type="video/mp4">
 						
 						Your browser does not support the video tag.
 					  </video>
-					  <a href="#" ng-click="goToCharacterPage()" >
+					  <!--<a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
-						</a>
+						</a>-->
 					</div>
 					<img class="img-responsive" src='./untitled.png'>
 				  </li>
 				  <li>
 					<img > <!-- random image -->
 					<div class="caption center-align">
-					  <h1 style="font-family:'Oswald'" class="animated fadeIn">Can You Escape...</h1>
-					  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
+					  <h1 style="font-family:'Oswald'" class="animated fadeIn">EARN WHILE YOU PLAY</h1>
+					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald';">Make Money Doing What You love! What More Can You Ask For?</h5>
 					  <video width="100%" playsinline autoplay muted loop controls>
 						<source src="./raed.mp4" type="video/mp4">
 						

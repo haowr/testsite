@@ -169,6 +169,28 @@
                     $scope.menu3 = false;
 
         }
+               $scope.openInfoPage = function(){
+ $('html, body').animate({
+                scrollTop: $("#infopage").offset().top
+            }, 1000); 
+                  $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
+
+        }
+          $scope.goToHome = function(){
+ $('html, body').animate({
+                scrollTop: $("#firstDiv").offset().top
+            }, 1000); 
+                  $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
+
+        }
         $scope.clickTest()
         $scope.openContactPage     = function(){
 

@@ -385,7 +385,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						
 						Your browser does not support the video tag.
 					  </video>
-					  <a href="#" ng-click="clickTest()" >
+					  <a href="#" ng-click="goToCharacterPage()" >
 						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 						</i>
 						</a>
@@ -409,30 +409,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					</div>
 					<img class="img-responsive" src='./untitled.png'>
 				  </li>
-				  <li>
-					<img > <!-- random image -->
-					<div class="caption center-align">
-					  <h1 style="font-family:'Oswald'" class="animated fadeIn">Can You Escape...</h1>
-					  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
-					  <video width="100%" playsinline autoplay muted loop controls>
-						<source src="./56.mp4" type="video/mp4">
-						
-						Your browser does not support the video tag.
-					  </video>
-					  <a href="#" ng-click="clickTest()" >
-						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
-						</i>
-						</a>
-					</div>
-					<img class="img-responsive" src='./untitled.png'>
-				  </li>
-				  <li>
-					<img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-					<div class="caption center-align">
-					  <h3>This is our big Tagline!</h3>
-					  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-					</div>
-				  </li>
+				  
 				</ul>
 			  </div>
 			  <div class="slider" id="characters" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
@@ -443,8 +420,11 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					<div class="caption center-align" style="border:2px solid white;">
 					  <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
 					  <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... ZIZU was forged in the fires of...</h5>
-					  <img class="img-responsive" src='./zz.png'>
-				     
+					  <img class="img-responsive" style="position:absolute:top:0;" src='./zz.png'>
+				      <a href="#" ng-click="goToNftPage()"  style='position:absolute; top:60;right:20vw'>
+						<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+						</i>
+					</a>
 						
 						  <div class="col s12">
 							<h3 class="animated flash infinite"style="font-family:'Oswald';"><i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_left</i>SWIPE<i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_right</i></h3>
@@ -471,7 +451,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					
 					
 					</div>
-
+					
 
 					 </li>
 					 <li>
@@ -480,29 +460,35 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 						   <div class="caption center-align" style="border:2px solid white;">
 							 <h1 style="font-family:'Oswald'" class="animated fadeIn">ZIZU</h1>
 							 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
+							 <h5 class="animated flash infinite"style="font-family:'Oswald';"><i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_left</i>SWIPE<i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_right</i></h5>
+
 							 <img class="img-responsive" src='./steel.png'>
 							 <div class="col s12">
-								<h3 class="animated flash infinite"style="font-family:'Oswald';"><i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_left</i>SWIPE<i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_right</i></h3>
-	
+								<a href="#" ng-click="goToContactPage()"  >
+									<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
+									</i>
+									</a>
 							  </div>
 						   </div>
 						 </li>
-		
+						 
 				</ul>
 			  </div>
-			  <div class="slider" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
+			  
+			  <div class="slider" id="nft" style= "background-color:transparent; background-image:url('./joj-01.png')">
 				<ul class="slides" style="background-color:transparent;">
 					<li>
 						<img > <!-- random image -->
 						<div class="caption center-align">
 						  <h1 style="font-family:'Oswald'" class="animated fadeIn">NFT ASSETS</h1>
-						  <h5 class="light grey-text text-lighten-3">The Meta Factory?</h5>
+						  <p style="font-family:'Oswald'; font-size:20px;" class="light grey-text text-lighten-3">Using our NFTs exclusively, players engage in adventurous games and compete against each other while earning tokens. Users can purchase virtual land in our Meta world and get the chance to watch cartoons in an augmented landscape.</p>
+						 <br>
 						  <video width="100%" playsinline autoplay muted loop controls>
 							<source src="./56.mp4" type="video/mp4">
 							
 							Your browser does not support the video tag.
 						  </video>
-						  <a href="#" ng-click="clickTest()" >
+						  <a href="#" ng-click="goToContactPage()" >
 							<i style="font-size:100px; color:rgb(242, 197, 113);"class="material-icons  text-yellow animated flash infinite">arrow_drop_down
 							</i>
 							</a>
@@ -512,7 +498,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 			
 				</ul>
 			  </div>
-			  <div class="slider" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
+
+
+
+			  <div class="slider" id="contact" style= "background-color:transparent; background-image:url('./jk-01-01-01-0z-01.png')">
 				<ul class="slides" style="background-color:transparent;">
 				  <li>
 					<img > <!-- random image -->

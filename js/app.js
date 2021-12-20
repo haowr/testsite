@@ -141,6 +141,18 @@
                 scrollTop: $("#characters").offset().top
             }, 1000);
         }
+        $scope.goToNftPage = function(){
+
+            $('html, body').animate({
+                scrollTop: $("#nft").offset().top
+            }, 1000); 
+        }
+        $scope.goToContactPage = function(){
+ $('html, body').animate({
+                scrollTop: $("#contact").offset().top
+            }, 1000); 
+
+        }
         $scope.clickTest()
         $scope.openContactPage     = function(){
 

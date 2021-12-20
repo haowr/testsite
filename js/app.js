@@ -113,6 +113,7 @@
                 
                 $scope.audio.play()
                 $scope.menuItemsOn = false;
+                $scope.menuListClosed = true;
 
                // setTimeout(()=>{
 
@@ -140,17 +141,32 @@
             $('html, body').animate({
                 scrollTop: $("#characters").offset().top
             }, 1000);
+            $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
         }
         $scope.goToNftPage = function(){
 
             $('html, body').animate({
                 scrollTop: $("#nft").offset().top
             }, 1000); 
+                 $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
         }
         $scope.goToContactPage = function(){
  $('html, body').animate({
                 scrollTop: $("#contact").offset().top
             }, 1000); 
+                  $scope.menuOpen = false;
+            $scope.menuListClosed = true;
+                    $scope.menu1 = false;
+                    $scope.menu2 = false;
+                    $scope.menu3 = false;
 
         }
         $scope.clickTest()

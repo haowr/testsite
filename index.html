@@ -197,7 +197,7 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 	height:0vh;
 	width:100%;
 	border:16px solid black;
-	transition:1s;
+
 	background-color:black;
 
 
@@ -206,10 +206,10 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 
 	position:fixed;
 	top:0;
-	height:100vh;
+	height:600px;
 	border:16px solid black;
 	width:100%;
-	transition:1s;
+	
 	background-color:black;
 
 
@@ -217,13 +217,13 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 .menuopen{
 	
 	color:black;
-	transition:.5s;
+
 }
 
 .menuclose{
 
 	color:white;
-	transition:.5s;
+
 }
 @font-face {
   font-family: "shem";
@@ -272,63 +272,33 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 <div class="menufixed" ng-class="{'menularge':menuOpen,'menulist': !menuOpen}">
 
 
-	<div ng-if="!menuListClosed" class=" animated " ng-class="{'fadeIn':menuItemsOn,'fast':menuItemsOn, 'fadeOut': !menuItemsOn,'fast': !menuItemsOn}" style="position:absolute; z-index:1000;">
+	<div ng-if="!menuListClosed" class=" animated " ng-class="{'fadeIn':menuItemsOn,'fast':menuItemsOn, }" style="position:absolute; z-index:1000;">
 		<div class="row">
-
-			<div class="col s12 center-align animated slideInLeft" >
-				<h3 style="font-family:'shem'">HOME</h3>
-			</div>
+				
+			
 			<div class="row"></div>
 			<div class="row"></div>
+<br>
+<br>
+			<ul>
+				<li><h3 ng-class="{'menu1':menu1}" ng-click="openMenu1()" class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME</h3></li>
+				<li><h3 ng-class="{'menu1':menu2}"  ng-click="openMenu2()"class="white-text"style="font-family:'Oswald'; font-size:40px;">INFO</h3></li>
 
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToCharacterPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CHARACTERS</h3></li>
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToNftPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">NFT</h3></li>
+
+				<li><h3 ng-class="{'menu1':menu3}" ng-click="goToContactPage()"class="white-text"style="font-family:'Oswald'; font-size:40px;">CONTACT</h3></li>
+
+				</ul>
+		
 	
-			<div class="col s3 right-align" ng-class="{'menu1':menu1}">
-			</div>
-			<div  class="col s6  center-align " style="border-bottom:3px solid black" ng-class="{'menu1':menu1}">
-				<h3 class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME</h3>
-
-			</div>
-			<div class="col s3 left-align" ng-class="{'menu1':menu1}">
-			</div>
-			<div class="row">
-			<div class="col s3 right-align" ng-class="{'menu1':menu1}">
-			</div>
-			<div  class="col s6  center-align " style="border-bottom:3px solid black" ng-class="{'menu1':menu1}">
-				<h3 class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME?</h3>
-
-			</div>
-			<div class="col s3 left-align" ng-class="{'menu1':menu1}">
-			</div>
-			<div class="row">
-				<div class="col s3 right-align" ng-class="{'menu1':menu1}">
-				</div>
-				<div  class="col s6  center-align " style="border-bottom:3px solid black" ng-class="{'menu1':menu1}">
-					<h3 class="white-text"style="font-family:'Oswald'; font-size:40px;">HOME?</h3>
-	
-				</div>
-				<div class="col s3 left-align" ng-class="{'menu1':menu1}">
-				</div>
 		</div>
 		</div>
 			<div class="row">
-			<div class="col s3 right-align" ng-class="{'menu1':menu2}">
-			</div>
-			<div  class="col s6  center-align " style="border-bottom:3px solid black" ng-class="{'menu1':menu2}">
-				<img src="./home.svg" style="height:60px; width:150px;" ng-click="openMenu2()">
-
-			</div>
-			<div class="col s3 left-align" ng-class="{'menu1':menu2}">
-			</div>
+		
 </div>
 <div class="row">
-			<div class="col s3 right-align" ng-class="{'menu1':menu3}">
-			</div>
-			<div  class="col s6  center-align " style="border-bottom:3px solid black" ng-class="{'menu1':menu3}">
-				<img src="./home.svg" style="height:60px; width:150px;" ng-click="openMenu3()">
-
-			</div>
-			<div class="col s3 left-align" ng-class="{'menu1':menu3}">
-			</div>
+	
 		</div>
 
 
@@ -352,13 +322,17 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 		<div class="row">
 		
 			<div class="slider section scrollspy" id="firstDiv" style= "background-color:transparent; background-image:url('./BBBCKRNDLESS.png')">
-				<ul class="slides" style="background-color:transparent;">
+				<ul class="slides" style="background-color:transparent; ">
 				  <li>
 					<img > <!-- random image -->
 				
-					<div class="caption center-align">
+					<div class="caption center-align" style="border:2px solid white;">
+					<h1 style="font-family:'Oswald'">Can You Escape?</h1>
+					<h3 style="font-family:'Oswald'">THE META FACTORY...</h3>
 					
-						<img class="img-responsive" style="height:550px;width:300px;" src='./newuntitled.png'>
+					<a class="blue-grey lighten-2 btn"><i class="material-icons left">play_arrow</i>WATCH TRAILER</a>
+
+						<img class="img-responsive"  src='./untitled.png'>
 					</div>
 					
 				  </li>
@@ -439,6 +413,8 @@ var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_ur
 					   <div class="caption center-align" style="border:2px solid white;">
 						 <h1 style="font-family:'Oswald'" class="animated fadeIn">RAED</h1>
 						 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">The lean mean fighting machine... Steelz was forged in the fires of...</h5>
+						 <h5 class="light grey-text text-lighten-3" style="font-family:'Oswald">( SWIPE TO SCROLL )</h5>
+
 						 <img class="img-responsive" src='./rshad.png'>
 						 <div class="col s12">
 							<h3 class="animated flash infinite"style="font-family:'Oswald';"><i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_left</i>SWIPE<i class="material-icons animated flash infinite" style=" padding-top:5px;font-size:40px;">chevron_right</i></h3>

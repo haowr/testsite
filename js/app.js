@@ -36,7 +36,7 @@
   
         $scope.openShopPage = function(){
 
-            $scope.bgaudio.play()
+           // $scope.bgaudio.play()
 
         }
         $scope.openMenu1 = function(){
@@ -71,7 +71,7 @@
             if(!$scope.volumeOn){
 
                 $scope.volumeOn = true;
-                $scope.bgaudio.play()
+               // $scope.bgaudio.play()
 
             }else{
 
